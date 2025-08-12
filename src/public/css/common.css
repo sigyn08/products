@@ -1,0 +1,29 @@
+/* ヘッダー全体 */
+.header {
+    background-color: #fff; /* 背景は白 */
+    border-bottom: 1px solid #e0e0e0; /* 下に薄い線 */
+    padding: 10px 20px;
+}
+
+/* 中身を横並び・中央寄せ */
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ロゴ部分 */
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8b400; 
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ロゴホバー時の色変化（任意） */
+.header__logo:hover {
+    opacity: 0.8;
+}

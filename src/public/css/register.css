@@ -1,0 +1,118 @@
+.register-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #f9f9f9;
+    padding: 30px 40px;
+    border-radius: 8px;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+    color: #444;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 14px;
+}
+
+.required {
+    background: #e70000;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+}
+
+.note {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    padding: 3px 6px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.season-options {
+    margin-bottom: 20px;
+}
+
+.season-options label {
+    margin-right: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.season-options input[type="checkbox"] {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 140px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn {
+    background-color: #ddd;
+    color: #555;
+}
+
+.back-btn:hover {
+    background-color: #ccc;
+}
+
+.submit-btn {
+    background-color: #ffd400;
+    color: #333;
+}
+
+.submit-btn:hover {
+    background-color: #f1c900;
+}

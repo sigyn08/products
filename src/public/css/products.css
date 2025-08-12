@@ -1,0 +1,154 @@
+.product-edit-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Hiragino Sans", sans-serif;
+}
+
+.breadcrumb {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.breadcrumb a {
+    color: #3490dc;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.product-edit-layout {
+    display: flex;
+    gap: 30px;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+.file-input {
+    display: none;
+}
+.file-label {
+    margin-top: 10px;
+    background: #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.season-options {
+    display: flex;
+    gap: 20px; /* ボタン同士の間隔 */
+}
+
+.season-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+    color: #444;
+}
+
+.season-options input[type="checkbox"] {
+    display: none; /* チェックボックスは非表示にする */
+}
+
+.season-options input[type="checkbox"] + span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* チェックされた時のスタイル */
+.season-options input[type="checkbox"]:checked + span {
+    background-color: #f9be00; /* 黄色 */
+    border-color: #f9be00;
+    color: white;
+    font-weight: 700;
+}
+
+.form-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-back {
+    background: #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-save {
+    background: #f7c400;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+/* 季節ラベルを横並びに */
+.form-group .season-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* ラベル間の余白 */
+    cursor: pointer;
+}
+
+/* 季節名 */
+.season-name {
+    font-size: 14px;
+}
